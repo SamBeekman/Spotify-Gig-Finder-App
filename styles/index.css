@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  --mountainPink: #a6808c;
+  --paleDogwood: #ccb7ae;
+  --mindaro: #dbff76;
+  --spaceCadet: #202c59;
+  --caputMortum: #581f18;
+  --spotifyGreen: #1db954;
+}
+
+/* background-color: #f1f1f1; */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-image: linear-gradient(to top, #decba4, #3e5151);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  text-align: justify;
+  border: 5px solid black;
+  margin: 1% 0;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#divSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#infoModal {
+  top: 10% !important;
+}
+
+.off-canvas.position-left {
+  width: 250px; /* Set the desired width */
+  padding-left: 1%;
+  padding-top: 2%;
+  background-color: var(--spaceCadet);
+  color: #f1f1f1;
+}
+.off-canvas-content {
+  padding-left: 300px; /* Match the width of the off-canvas menu */
+}
+
+.off-canvas button {
+  color: #f1f1f1;
+}
+
+.savedTickets {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.savedItem {
+  border: 2px solid black;
+  margin: 5px 5px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.savedItem h4 {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.savedItem a {
+  color: var(--spotifyGreen);
+  font-weight: bold;
+}
+
+.authTab {
+  display: flex;
+  flex-direction: column;
+}
+
+.authTab h3 {
+  flex: 1 0 30%;
+  text-align: center;
+}
+
+.authTab div {
+  flex: 1 0 60%;
+  margin-right: 5px;
+}
+
+#authSection {
+  flex: 1 0 auto;
+  padding: 2%;
+}
+
+#authSection h2 {
+  text-align: center;
+}
+
+#artistSection {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+#artistSection article {
+  margin: 5px;
+  flex: 1 0 50%;
+}
+
+#artistSection aside {
+  margin: 5px;
+  flex: 1 0 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#authBtn {
+  background-color: var(--spotifyGreen);
+  color: var(--spaceCadet);
+}
+
+.artistGenerated {
+  list-style-type: none;
+}
+
+.artistGen {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#searchResult {
+  display: flex;
+}
+
+#playlistTitle {
+  flex: 1 0 20%;
+  text-align: center;
+}
+
+#searchTicket {
+  flex: 1 0 70%;
+  display: flex;
+}
+
+.artistGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.artistName {
+  flex: 1 0 200px;
+}
+
+#footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  /* left: 0px; */
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  left: 0px;
+  width: 100%;
+  background-color: black;
+}
+
+/* test */
+#map {
+  flex: 1 2 400px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .authTab {
+    flex-direction: column;
+  }
+
+  #secondSection {
+    flex-direction: column;
+  }
+  #searchResult {
+    flex-direction: column;
+  }
+  #searchTicket {
+    flex-direction: column;
+  }
+}
