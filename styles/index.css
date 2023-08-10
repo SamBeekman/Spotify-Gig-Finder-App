@@ -9,7 +9,7 @@
   --spotifyGreen: #1db954;
 }
 
-/* background-color: #f1f1f1; */
+
 html,
 body {
   margin: 0;
@@ -20,7 +20,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-image: linear-gradient(to top, #decba4, #3e5151);
+  /* background-image: linear-gradient(to top, #decba4, #3e5151); */
+  background-color: #f1f1f1;
   background-size: cover;
   background-attachment: fixed;
   max-width: 100%;
@@ -60,14 +61,17 @@ section {
 }
 
 .off-canvas.position-left {
-  width: 250px; /* Set the desired width */
+  width: 250px;
+  /* Set the desired width */
   padding-left: 1%;
   padding-top: 2%;
   background-color: var(--spaceCadet);
   color: #f1f1f1;
 }
+
 .off-canvas-content {
-  padding-left: 300px; /* Match the width of the off-canvas menu */
+  padding-left: 300px;
+  /* Match the width of the off-canvas menu */
 }
 
 .off-canvas button {
@@ -209,9 +213,11 @@ h2 {
   #secondSection {
     flex-direction: column;
   }
+
   #searchResult {
     flex-direction: column;
   }
+
   #searchTicket {
     flex-direction: column;
   }
