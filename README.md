@@ -38,7 +38,7 @@ WHEN I click on the 'Buy Tickets' button
 THEN I am redirected to a ticketing page where I can purchase tickets for the show
 ```
 
-Link to deployed site: https://sambeekman.github.io/spotify-gig-finder/
+Link to deployed site: https://sambeekman.github.io/Spotify-Gig-Finder-App/
 
 ## Screenshot of our application:
 
